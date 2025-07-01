@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loading...</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: neutral-200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+      .container {
+        background-color: #FDF9F3;
+        border: 1px solid #E7E7E7;
+        border-radius: 1rem;
+        padding: 3rem;
+        max-width: 28rem;
+        width: 100%;
+        text-align: left;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 0.5rem;
+      }
+      .subtitle {
+        font-size: 1.25rem;
+        color: #4b5563;
+        margin-bottom: 2rem;
+      }
+      .progress-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0.5rem;
+        background-color: #e5e7eb;
+        border-radius: 9999px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+      }
+      .progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #79D7FF;
+        border-radius: 9999px;
+        animation: loading 4.8s ease-in-out forwards;
+      }
+      @keyframes loading {
+        0% { width: 0%; }
+        100% { width: 100%; }
+      }
+      .note {
+        color: #6b7280;
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+    </style>
+    <script>
+      setTimeout(function() {
+        window.location.href = "https://basic-audience-475192.framer.app/";
+      }, 3500);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Loading...<b>Kind of</b></h1>
+      <h2 class="subtitle">I made this cheeky HTML wrapper to bypass framer's new pricing model. </h2>
+      <div class="progress-wrapper">
+        <div class="progress-bar"></div>
+      </div>
+      <p class="note">
+        <b>This little loader saves me >£200 per year <3</b><br />
+      </p>
+    </div>
+  </body>
+</html>
